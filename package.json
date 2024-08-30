@@ -14,7 +14,8 @@
     "@tabler/icons-react": "^3.14.0",
     "next": "14.2.4",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "typed.js": "^2.1.0"
   },
   "devDependencies": {
     "@types/node": "20.14.8",
