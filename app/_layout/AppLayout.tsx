@@ -11,7 +11,11 @@ interface Props {
 const AppLayout: React.FC<Props> = function ({ children }) {
   const [opened, { toggle }] = useDisclosure();
 
-  function handleNavClick(hash: string) {
+  function handleNavClick(hash: string, toggleNav: boolean = false) {
+    if (toggleNav) {
+      toggle();
+    }
+
     if (hash === 'home') {
       window.scrollTo(0, 0);
       return;
@@ -63,10 +67,25 @@ const AppLayout: React.FC<Props> = function ({ children }) {
       </AppShell.Header>
 
       <AppShell.Navbar py="md" px={4}>
-        <Stack ml="md">
-          <UnstyledButton className={classes.control}>Home</UnstyledButton>
-          <UnstyledButton className={classes.control}>Skills</UnstyledButton>
-          <UnstyledButton className={classes.control}>History</UnstyledButton>
+        <Stack ml="sm" gap="xs">
+          <UnstyledButton
+            className={classes.navcontrol}
+            onClick={() => handleNavClick('home', true)}
+          >
+            Home
+          </UnstyledButton>
+          <UnstyledButton
+            className={classes.navcontrol}
+            onClick={() => handleNavClick('skills', true)}
+          >
+            Skills
+          </UnstyledButton>
+          <UnstyledButton
+            className={classes.navcontrol}
+            onClick={() => handleNavClick('history', true)}
+          >
+            History
+          </UnstyledButton>
           {/* <UnstyledButton className={classes.control} disabled>Projects</UnstyledButton>
           <UnstyledButton className={classes.control} disabled>Articles</UnstyledButton>
           <UnstyledButton className={classes.control} disabled>Certificates</UnstyledButton> */}
