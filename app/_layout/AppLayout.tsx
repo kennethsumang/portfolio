@@ -45,7 +45,7 @@ const AppLayout: React.FC<Props> = function ({ children }) {
         </Stack>
       </AppShell.Navbar>
 
-      <AppShell.Main>
+      <AppShell.Main px={{ base: 'md', xs: 'md', sm: 'lg', md: 'xl', lg: 'xl', xl: 'xl' }}>
         {children}
       </AppShell.Main>
 

@@ -1,3 +1,4 @@
+import { Stack } from "@mantine/core";
 import ArticlesSection from "./_sections/articles/ArticlesSection";
 import CertificatesSection from "./_sections/certificates/CertificatesSection";
 import HistorySection from "./_sections/history/HistorySection";
@@ -7,13 +8,13 @@ import SkillsSection from "./_sections/skills/SkillsSection";
 
 export default function HomePage() {
   return (
-    <div>
+    <Stack gap="xl">
       <HomeSection />
       <SkillsSection />
       <HistorySection />
       <CertificatesSection />
       <ProjectsSection />
       <ArticlesSection />
-    </div>
+    </Stack>
   );
 }
