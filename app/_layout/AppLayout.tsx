@@ -22,8 +22,9 @@ const AppLayout: React.FC<Props> = function ({ children }) {
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
           <Group justify="space-between" style={{ flex: 1 }}>
             <Text size="lg">Portfolio</Text>
-            <Group ml="xl" gap={40} visibleFrom="sm">
+            <Group ml="xl" gap={20} visibleFrom="sm">
               <UnstyledButton className={classes.control}>Home</UnstyledButton>
+              <UnstyledButton className={classes.control}>Skills</UnstyledButton>
               <UnstyledButton className={classes.control}>History</UnstyledButton>
               <UnstyledButton className={classes.control}>Projects</UnstyledButton>
               <UnstyledButton className={classes.control}>Articles</UnstyledButton>
@@ -36,6 +37,7 @@ const AppLayout: React.FC<Props> = function ({ children }) {
       <AppShell.Navbar py="md" px={4}>
         <Stack ml="md">
           <UnstyledButton className={classes.control}>Home</UnstyledButton>
+          <UnstyledButton className={classes.control}>Skills</UnstyledButton>
           <UnstyledButton className={classes.control}>History</UnstyledButton>
           <UnstyledButton className={classes.control}>Projects</UnstyledButton>
           <UnstyledButton className={classes.control}>Articles</UnstyledButton>
