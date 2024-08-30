@@ -46,8 +46,7 @@ const AppLayout: React.FC<Props> = function ({ children }) {
       </AppShell.Navbar>
 
       <AppShell.Main>
-        Navbar is only visible on mobile, links that are rendered in the header on desktop are
-        hidden on mobile in header and rendered in navbar instead.
+        {children}
       </AppShell.Main>
 
       <AppShell.Footer>
