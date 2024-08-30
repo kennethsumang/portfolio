@@ -96,7 +96,7 @@ const SkillsSection: React.FC = function () {
 
   return (
     <Stack>
-      <Title order={2}>My Skills</Title>
+      <Title order={2} id="skills">My Skills</Title>
 
       <Title order={3}>Frontend</Title>
       <Grid gutter={{ base: 10 }} columns={24}>

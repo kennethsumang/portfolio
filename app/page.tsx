@@ -8,13 +8,13 @@ import SkillsSection from "./_sections/skills/SkillsSection";
 
 export default function HomePage() {
   return (
-    <Stack gap="xl">
+    <Stack gap="xl" pb="4em" pt="4em">
       <HomeSection />
       <SkillsSection />
       <HistorySection />
-      <CertificatesSection />
+      {/* <CertificatesSection />
       <ProjectsSection />
-      <ArticlesSection />
+      <ArticlesSection /> */}
     </Stack>
   );
 }

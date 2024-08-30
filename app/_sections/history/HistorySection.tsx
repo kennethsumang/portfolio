@@ -6,7 +6,7 @@ import { IconBriefcaseFilled, IconSchool } from '@tabler/icons-react';
 const HistorySection: React.FC = function () {
   return (
     <Stack>
-      <Title order={2}>History</Title>
+      <Title order={2} id="history">History</Title>
       <Timeline bulletSize={24} lineWidth={2} active={0}>
         <Timeline.Item bullet={<IconBriefcaseFilled size={12} />} title="Accenture Inc.">
           <List>

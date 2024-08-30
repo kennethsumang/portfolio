@@ -1,7 +1,7 @@
 "use client"
 
 const HomeSection: React.FC = function () {
-  return <h1>Kenneth Sumang</h1>
+  return <h1 id="home">Kenneth Sumang</h1>
 }
 
 export default HomeSection;
