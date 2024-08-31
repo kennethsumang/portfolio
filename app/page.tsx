@@ -12,8 +12,8 @@ export default function HomePage() {
       <HomeSection />
       <SkillsSection />
       <HistorySection />
-      {/* <CertificatesSection />
-      <ProjectsSection />
+      <CertificatesSection />
+      {/* <ProjectsSection />
       <ArticlesSection /> */}
     </Stack>
   );

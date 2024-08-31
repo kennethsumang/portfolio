@@ -30,7 +30,7 @@ const HomeSection: React.FC = function () {
   }
 
   return (
-    <Stack mb="xl">
+    <Stack mb="6em">
       <Title order={1} id="home">Kenneth Sumang</Title>
       <div style={{ display: 'flex' }}>
         <Text ref={typingElement} />

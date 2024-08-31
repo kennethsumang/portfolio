@@ -83,6 +83,11 @@ const SkillsSection: React.FC = function () {
       description: 'test',
     },
     {
+      logo: '/logos/chatgpt.svg',
+      name: 'ChatGPT API',
+      description: 'test',
+    },
+    {
       logo: '/logos/jira.svg',
       name: 'Jira',
       description: 'test',
@@ -103,7 +108,7 @@ const SkillsSection: React.FC = function () {
         {
           frontendSkillList.map((skill) => {
             return (
-              <Grid.Col span={{ base: 12, xs: 8, sm: 6, md: 4, lg: 3, xl: 2 }} key={skill.name} >
+              <Grid.Col span={{ base: 12, xs: 8, sm: 6, md: 4, lg: 3, xl: 3 }} key={skill.name} >
                 <SkillContainer {...skill} />
               </Grid.Col>
             );
@@ -116,7 +121,7 @@ const SkillsSection: React.FC = function () {
         {
           backendSkillList.map((skill) => {
             return (
-              <Grid.Col span={{ base: 12, xs: 8, sm: 6, md: 4, lg: 3, xl: 2 }} key={skill.name} >
+              <Grid.Col span={{ base: 12, xs: 8, sm: 6, md: 4, lg: 3, xl: 3 }} key={skill.name} >
                 <SkillContainer {...skill} />
               </Grid.Col>
             );
@@ -129,7 +134,7 @@ const SkillsSection: React.FC = function () {
         {
           toolsSkillList.map((skill) => {
             return (
-              <Grid.Col span={{ base: 12, xs: 8, sm: 6, md: 4, lg: 3, xl: 2 }} key={skill.name} >
+              <Grid.Col span={{ base: 12, xs: 8, sm: 6, md: 4, lg: 3, xl: 3 }} key={skill.name} >
                 <SkillContainer {...skill} />
               </Grid.Col>
             );
