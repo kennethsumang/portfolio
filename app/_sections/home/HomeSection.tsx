@@ -34,7 +34,7 @@ const HomeSection: React.FC = function () {
   }
 
   return (
-    <Stack mb="6em">
+    <Stack mb="6em" justify="center">
       <Title order={1} id="home">Kenneth Sumang</Title>
       <div className={classes.typingcontainer}>
         <Text ref={typingElement} />

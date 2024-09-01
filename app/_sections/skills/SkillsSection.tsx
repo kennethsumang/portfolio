@@ -42,6 +42,11 @@ const SkillsSection: React.FC = function () {
       description: 'test',
     },
     {
+      logo: '/logos/jquery.svg',
+      name: 'jQuery',
+      description: 'test',
+    },
+    {
       logo: '/logos/tailwind.svg',
       name: 'Tailwind',
       description: 'test',
@@ -49,6 +54,11 @@ const SkillsSection: React.FC = function () {
     {
       logo: '/logos/bootstrap.svg',
       name: 'Bootstrap',
+      description: 'test',
+    },
+    {
+      logo: '/logos/jest.svg',
+      name: 'Jest',
       description: 'test',
     },
   ];
@@ -75,6 +85,19 @@ const SkillsSection: React.FC = function () {
       description: 'test',
     }
   ];
+
+  const databaseSkillList: Skill[] = [
+    {
+      logo: '/logos/mysql.svg',
+      name: 'MySQL',
+      description: 'test',
+    },
+    {
+      logo: '/logos/postgresql.svg',
+      name: 'PostgreSQL',
+      description: 'test',
+    },
+  ]
 
   const toolsSkillList: Skill[] = [
     {
@@ -125,6 +148,19 @@ const SkillsSection: React.FC = function () {
       <Grid gutter={{ base: 10 }} columns={24}>
         {
           backendSkillList.map((skill) => {
+            return (
+              <Grid.Col span={{ base: 12, xs: 8, sm: 6, md: 4, lg: 4, xl: 3 }} key={skill.name} >
+                <SkillContainer {...skill} />
+              </Grid.Col>
+            );
+          })
+        }
+      </Grid>
+
+      <Title order={3}>Databases</Title>
+      <Grid gutter={{ base: 10 }} columns={24}>
+        {
+          databaseSkillList.map((skill) => {
             return (
               <Grid.Col span={{ base: 12, xs: 8, sm: 6, md: 4, lg: 4, xl: 3 }} key={skill.name} >
                 <SkillContainer {...skill} />

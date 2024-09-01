@@ -110,7 +110,7 @@ const AppLayout: React.FC<Props> = function ({ children }) {
 
       <AppShell.Footer>
         <div className={classes.footer}>
-          <Stack align="center">
+          <Stack align="center" gap={0}>
             <Text size="sm">
               All trademarks, logos and brand names are the property of their respective owners.
             </Text>
