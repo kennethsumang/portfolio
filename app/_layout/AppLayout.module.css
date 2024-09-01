@@ -24,3 +24,7 @@
   margin: 1rem;
   text-align: center;
 }
+
+.navbargroup {
+  flex: 1;
+}

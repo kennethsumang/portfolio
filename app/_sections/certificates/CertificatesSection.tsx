@@ -94,7 +94,7 @@ const CertificatesSection: React.FC = function () {
 
   return (
     <Stack>
-      <Title order={2}>My Certificates</Title>
+      <Title order={2} id="certificates">My Certificates</Title>
 
       {
         certificateList.map((certificate, index) => {

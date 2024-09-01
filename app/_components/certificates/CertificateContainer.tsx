@@ -2,6 +2,7 @@
 
 import { Anchor, Group, Stack, Text } from "@mantine/core";
 import Image from "next/image";
+import classes from "./CertificateContainer.module.css";
 
 interface Props {
   name: string;
@@ -13,10 +14,10 @@ interface Props {
 
 const CertificateContainer: React.FC<Props> = function (props) {
   return (
-    <Group gap="md" align="start" style={{ width: "100%" }} wrap="nowrap">
+    <Group gap="md" align="start" className={classes.parentcontainer} wrap="nowrap">
       <Image src={props.logo} alt={props.issuer} height={24} width={24} />
       <Stack gap={0}>
-        <Anchor href={props.url}>
+        <Anchor href={props.url} target="_blank">
           <Text fw={700}>{props.name}</Text>
         </Anchor>
         <Text>{props.issuer}</Text>

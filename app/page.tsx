@@ -8,7 +8,7 @@ import SkillsSection from "./_sections/skills/SkillsSection";
 
 export default function HomePage() {
   return (
-    <Stack gap="xl" pb="4em" pt="4em">
+    <Stack gap="xl" pb="4em" pt="4em" px={{ base: "1em", xs: "1em", sm: "2em", md: "2em", lg: "2em", xl: "3em" }}>
       <HomeSection />
       <SkillsSection />
       <HistorySection />

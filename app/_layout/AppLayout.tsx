@@ -3,6 +3,7 @@
 import { AppShell, Burger, Group, UnstyledButton, Text, Stack } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./AppLayout.module.css";
+import CreditsDialog from "../_components/credits/CreditsDialog";
 
 interface Props {
   children: React.ReactNode;
@@ -37,7 +38,7 @@ const AppLayout: React.FC<Props> = function ({ children }) {
       <AppShell.Header>
         <Group h="100%" px="md">
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-          <Group justify="space-between" style={{ flex: 1 }}>
+          <Group justify="space-between" className={classes.navbargroup}>
             <Text size="lg">Portfolio</Text>
             <Group ml="xl" gap={20} visibleFrom="sm">
               <UnstyledButton
@@ -58,9 +59,14 @@ const AppLayout: React.FC<Props> = function ({ children }) {
               >
                 History
               </UnstyledButton>
+              <UnstyledButton
+                className={classes.control}
+                onClick={() => handleNavClick('certificates')}
+              >
+                Certificates
+              </UnstyledButton>
               {/* <UnstyledButton className={classes.control} disabled>Projects</UnstyledButton>
-              <UnstyledButton className={classes.control} disabled>Articles</UnstyledButton>
-              <UnstyledButton className={classes.control} disabled>Certificates</UnstyledButton> */}
+              <UnstyledButton className={classes.control} disabled>Articles</UnstyledButton> */}
             </Group>
           </Group>
         </Group>
@@ -86,9 +92,15 @@ const AppLayout: React.FC<Props> = function ({ children }) {
           >
             History
           </UnstyledButton>
+
+          <UnstyledButton
+                className={classes.navcontrol}
+                onClick={() => handleNavClick('certificates')}
+              >
+                Certificates
+              </UnstyledButton>
           {/* <UnstyledButton className={classes.control} disabled>Projects</UnstyledButton>
-          <UnstyledButton className={classes.control} disabled>Articles</UnstyledButton>
-          <UnstyledButton className={classes.control} disabled>Certificates</UnstyledButton> */}
+          <UnstyledButton className={classes.control} disabled>Articles</UnstyledButton>*/}
         </Stack>
       </AppShell.Navbar>
 
@@ -98,9 +110,14 @@ const AppLayout: React.FC<Props> = function ({ children }) {
 
       <AppShell.Footer>
         <div className={classes.footer}>
-          <Text size="sm">
-            All trademarks, logos and brand names are the property of their respective owners.
-          </Text>
+          <Stack align="center">
+            <Text size="sm">
+              All trademarks, logos and brand names are the property of their respective owners.
+            </Text>
+            <div>
+              <CreditsDialog />
+            </div>
+          </Stack>
         </div>
       </AppShell.Footer>
     </AppShell>
