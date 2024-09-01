@@ -10,8 +10,8 @@ interface Props {
 
 const SkillContainer: React.FC<Props> = function (props) {
   return (
-    <Popover position="bottom" withArrow shadow="md">
-      <Popover.Target>
+    // <Popover position="bottom" withArrow shadow="md">
+    //   <Popover.Target>
         <Paper shadow="sm" p="lg" className={classes.card}>
           <Stack justify="center">
             <Group justify="center">
@@ -22,11 +22,11 @@ const SkillContainer: React.FC<Props> = function (props) {
             </Group>
           </Stack>
         </Paper>
-      </Popover.Target>
-      <Popover.Dropdown>
-        <Text size="xs">{props.description}</Text>
-      </Popover.Dropdown>
-    </Popover>
+      // </Popover.Target>
+      // <Popover.Dropdown>
+      //   <Text size="xs">{props.description}</Text>
+      // </Popover.Dropdown>
+    // </Popover>
   )
 }
 
