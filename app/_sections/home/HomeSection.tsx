@@ -41,7 +41,7 @@ const HomeSection: React.FC = function () {
       </div>
       <Group gap="1em">
         <Anchor href="mailto:work@kennethsumang.com" target="_blank">
-          <IconMail height={24} width={24} />
+          <IconMail height={24} width={24} color="black" />
         </Anchor>
         <Anchor href="https://www.linkedin.com/in/kenneth-sumang/" target="_blank">
           <Image src="/logos/linkedin.svg" alt="LinkedIn logo" height={24} width={24} />
