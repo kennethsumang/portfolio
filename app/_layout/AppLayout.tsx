@@ -1,6 +1,6 @@
 "use client"
 
-import { AppShell, Burger, Group, UnstyledButton, Text, Stack } from "@mantine/core";
+import { AppShell, Burger, Group, UnstyledButton, Text, Stack, ScrollArea } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./AppLayout.module.css";
 import CreditsDialog from "../_components/credits/CreditsDialog";
@@ -33,9 +33,12 @@ const AppLayout: React.FC<Props> = function ({ children }) {
     <AppShell
       header={{ height: 60 }}
       navbar={{ width: 300, breakpoint: 'sm', collapsed: { desktop: true, mobile: !opened } }}
+      footer={{ height: 70 }}
       padding="md"
+      offsetScrollbars
+      style={{ height: "100vh", display: "flex" }}
     >
-      <AppShell.Header>
+      <AppShell.Header className={classes.header}>
         <Group h="100%" px="md">
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
           <Group justify="space-between" className={classes.navbargroup}>
@@ -104,7 +107,9 @@ const AppLayout: React.FC<Props> = function ({ children }) {
         </Stack>
       </AppShell.Navbar>
 
-      <AppShell.Main px={{ base: 'md', xs: 'md', sm: 'lg', md: 'xl', lg: 'xl', xl: 'xl' }}>
+      <AppShell.Main
+        px={{ base: 'md', xs: 'md', sm: 'lg', md: 'xl', lg: 'xl', xl: 'xl' }}
+      >
         {children}
       </AppShell.Main>
 
