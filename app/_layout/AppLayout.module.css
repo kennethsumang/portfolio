@@ -20,8 +20,12 @@
   }
 }
 
+.main {
+  flex: 1;
+  overflow-y: auto;
+}
+
 .footer {
-  height: 3.5em;
   margin: 1rem;
   text-align: center;
 }
