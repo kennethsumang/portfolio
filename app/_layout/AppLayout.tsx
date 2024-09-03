@@ -33,7 +33,7 @@ const AppLayout: React.FC<Props> = function ({ children }) {
     <AppShell
       header={{ height: 60 }}
       navbar={{ width: 300, breakpoint: 'sm', collapsed: { desktop: true, mobile: !opened } }}
-      footer={{ height: 70 }}
+      footer={{ height: 85 }}
       padding="md"
       offsetScrollbars
       style={{ height: "100vh", display: "flex" }}
@@ -98,7 +98,7 @@ const AppLayout: React.FC<Props> = function ({ children }) {
 
           <UnstyledButton
                 className={classes.navcontrol}
-                onClick={() => handleNavClick('certificates')}
+                onClick={() => handleNavClick('certificates', true)}
               >
                 Certificates
               </UnstyledButton>

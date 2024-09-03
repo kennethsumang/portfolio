@@ -13,8 +13,7 @@ const HomeSection: React.FC = function () {
   useEffect(() => {
     const typed = new Typed(typingElement.current, {
       strings: [
-        'I am an experienced frontend web developer.',
-        'I am an experienced backend web developer.',
+        'I am an experienced web developer.',
         'I am an passionate learner.',
         'I am a techonlogy architect.',
         'I am a tech enthusiast.'
