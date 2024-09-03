@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [1.0.2] - 2024-09-02
 ### Fixed
 - Last certificate entry hidden from view.
+- Add space at the top of logo in certificate.
 
 ## [1.0.1] - 2024-09-01
 ### Fixed
