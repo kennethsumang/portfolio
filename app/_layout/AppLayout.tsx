@@ -98,7 +98,7 @@ const AppLayout: React.FC<Props> = function ({ children }) {
 
           <UnstyledButton
                 className={classes.navcontrol}
-                onClick={() => handleNavClick('certificates')}
+                onClick={() => handleNavClick('certificates', true)}
               >
                 Certificates
               </UnstyledButton>
