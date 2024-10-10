@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.4] - 2024-10-10
+### Changed
+- Updated resume file
+
 ## [1.0.3] - 2024-09-03
 ### Fixed
 - Clicking certificate nav link on mobile drawer does not automatically close the drawer.
