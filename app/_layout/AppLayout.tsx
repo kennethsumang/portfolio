@@ -1,6 +1,6 @@
 "use client"
 
-import { AppShell, Burger, Group, UnstyledButton, Text, Stack, ScrollArea } from "@mantine/core";
+import { AppShell, Burger, Group, UnstyledButton, Text, Stack } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./AppLayout.module.css";
 import CreditsDialog from "../_components/credits/CreditsDialog";
