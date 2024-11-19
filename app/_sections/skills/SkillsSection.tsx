@@ -2,6 +2,7 @@
 
 import { Grid, Stack, Title } from "@mantine/core";
 import SkillContainer from "../../_components/skills/SkillContainer";
+import React from "react";
 
 interface Skill {
   logo: string;
@@ -112,7 +113,7 @@ const SkillsSection: React.FC = function () {
     },
     {
       logo: '/logos/chatgpt.svg',
-      name: 'ChatGPT API',
+      name: 'ChatGPT',
       description: 'test',
     },
     {

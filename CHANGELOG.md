@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.5] - 2024-11-19
+### Changed
+- Added position in History items
+- Updated packages with known vulnerabilities
+- Refactored and fixed code warnings
+
 ## [1.0.4] - 2024-10-10
 ### Changed
 - Updated resume file

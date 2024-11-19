@@ -3,6 +3,7 @@
 import { Anchor, Group, Stack, Text } from "@mantine/core";
 import Image from "next/image";
 import classes from "./CertificateContainer.module.css";
+import React from "react";
 
 interface Props {
   name: string;
