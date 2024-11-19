@@ -112,7 +112,7 @@ const SkillsSection: React.FC = function () {
     },
     {
       logo: '/logos/chatgpt.svg',
-      name: 'ChatGPT API',
+      name: 'ChatGPT',
       description: 'test',
     },
     {
