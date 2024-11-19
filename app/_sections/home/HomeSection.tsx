@@ -3,7 +3,7 @@
 import { Button, Stack, Title, Text, Group, Anchor } from "@mantine/core";
 import { IconMail } from "@tabler/icons-react";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import classes from "./HomeSection.module.css";
 
@@ -15,7 +15,7 @@ const HomeSection: React.FC = function () {
       strings: [
         'I am an experienced web developer.',
         'I am an passionate learner.',
-        'I am a techonlogy architect.',
+        'I am a technology architect.',
         'I am a tech enthusiast.'
       ],
       typeSpeed: 50,

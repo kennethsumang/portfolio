@@ -2,6 +2,7 @@
 
 import { Stack, Timeline, Title, Text, List } from "@mantine/core";
 import { IconBriefcaseFilled, IconSchool } from '@tabler/icons-react';
+import React from "react";
 
 const HistorySection: React.FC = function () {
   return (

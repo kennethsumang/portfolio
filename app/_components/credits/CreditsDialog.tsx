@@ -2,6 +2,7 @@
 
 import { Anchor, List, Modal, Stack, Text } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import React from "react";
 
 interface LogoAttribution {
   name: string;

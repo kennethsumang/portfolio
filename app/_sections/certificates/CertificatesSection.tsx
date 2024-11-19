@@ -2,6 +2,7 @@
 
 import { Divider, Stack, Title } from "@mantine/core";
 import CertificateContainer from "../../_components/certificates/CertificateContainer";
+import React from "react";
 
 interface Certificate {
   name: string;

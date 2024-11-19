@@ -4,6 +4,7 @@ import { AppShell, Burger, Group, UnstyledButton, Text, Stack, ScrollArea } from
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./AppLayout.module.css";
 import CreditsDialog from "../_components/credits/CreditsDialog";
+import React from "react";
 
 interface Props {
   children: React.ReactNode;

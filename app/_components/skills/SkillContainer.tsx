@@ -1,6 +1,7 @@
 import { Group, Paper, Popover, Stack, Text } from "@mantine/core";
 import Image from "next/image";
 import classes from "./SkillContainer.module.css";
+import React from "react";
 
 interface Props {
   logo: string;
