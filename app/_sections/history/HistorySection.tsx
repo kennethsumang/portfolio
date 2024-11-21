@@ -39,7 +39,7 @@ const HistorySection: React.FC = function () {
           <List>
             <List.Item><Text c="dimmed">Developed an app that monitors, displays and processes the time-in and time-out of an employee and computes their gross salary.</Text></List.Item>
           </List>
-          <Text size="xs" mt={4}>2018 - 2023</Text>
+          <Text size="xs" mt={4}>2017</Text>
         </Timeline.Item>
 
         <Timeline.Item bullet={<IconSchool size={12} />} title="Polytechnic University of the Philippines">
