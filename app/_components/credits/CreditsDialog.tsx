@@ -61,9 +61,9 @@ const CreditsDialog: React.FC = function () {
     {
       name: 'Docker',
       license: 'CC0 1.0 Universal',
-      licenseUrl: 'https://raw.githubusercontent.com/gilbarbara/logos/master/LICENSE.txt',
-      source: 'Gil Barbara',
-      sourceUrl: 'https://github.com/gilbarbara/logos'
+      licenseUrl: 'https://www.docker.com/legal/trademark-guidelines/',
+      source: 'Docker',
+      sourceUrl: 'https://www.docker.com/company/newsroom/media-resources/'
     },
     {
       name: 'edX',
