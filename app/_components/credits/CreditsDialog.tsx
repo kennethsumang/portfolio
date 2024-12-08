@@ -81,10 +81,10 @@ const CreditsDialog: React.FC = function () {
     },
     {
       name: 'Git',
-      license: 'Apache 2.0',
-      licenseUrl: 'https://github.com/Templarian/MaterialDesign/blob/master/LICENSE',
-      source: 'Pictogrammers',
-      sourceUrl: 'https://github.com/Templarian/MaterialDesign'
+      license: 'Creative Commons Attribution 3.0 Unported License',
+      licenseUrl: 'https://git-scm.com/downloads/logos',
+      source: 'Git',
+      sourceUrl: 'https://git-scm.com/downloads/logos'
     },
     {
       name: 'Github',
