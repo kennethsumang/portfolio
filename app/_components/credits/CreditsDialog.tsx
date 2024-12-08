@@ -240,6 +240,12 @@ const CreditsDialog: React.FC = function () {
             <List.Item key="mantine">
               UI Library by <Anchor href="https://mantine.dev/" target="_blank">Mantine</Anchor> licensed under <Anchor href="https://github.com/mantinedev/mantine/blob/master/LICENSE" target="_blank">MIT License</Anchor>.
             </List.Item>
+            <List.Item key="mantine">
+              Typing animation library by <Anchor href="https://github.com/mattboldt/typed.js" target="_blank">Matt Boldt</Anchor> licensed under <Anchor href="https://github.com/mattboldt/typed.js#MIT-1-ov-file" target="_blank">MIT License</Anchor>.
+            </List.Item>
+            <List.Item key="mantine">
+              Icon component library by <Anchor href="https://tabler.io/" target="_blank">Tabler.io</Anchor> licensed under <Anchor href="https://github.com/tabler/tabler?tab=MIT-1-ov-file#readme" target="_blank">MIT License</Anchor>.
+            </List.Item>
           </List>
           <Text fw={700}>Logo Attributions</Text>
           <List>
