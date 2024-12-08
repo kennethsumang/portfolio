@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.7] - 2024-12-08
+### Changed
+- Changed some icons and source to their official branding.
+- Added left padding for typing animation.
+- Fixed a11y issues.
+- Replaced school icon into filled.
+- Added SonarQube in skills.
+- Added framework and libraries in credits
+
 ## [1.0.6] - 2024-11-21
 ### Changed
 - Fixed wrong year for a history entry
