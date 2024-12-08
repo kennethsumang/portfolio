@@ -2,3 +2,8 @@
   display: flex;
   padding-left: 2px;
 }
+
+.resumeButton {
+  background-color: #1c76c4 !important;
+  color: white !important;
+}

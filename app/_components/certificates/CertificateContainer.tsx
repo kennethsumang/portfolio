@@ -22,7 +22,7 @@ const CertificateContainer: React.FC<Props> = function (props) {
           <Text fw={700}>{props.name}</Text>
         </Anchor>
         <Text>{props.issuer}</Text>
-        <Text c="dimmed">{props.issuedAt}</Text>
+        <Text>{props.issuedAt}</Text>
       </Stack>
     </Group>
   );

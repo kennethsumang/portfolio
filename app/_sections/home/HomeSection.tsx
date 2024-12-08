@@ -39,7 +39,7 @@ const HomeSection: React.FC = function () {
         <Text ref={typingElement} />
       </div>
       <Group gap="1em">
-        <Anchor href="mailto:work@kennethsumang.com" target="_blank">
+        <Anchor href="mailto:work@kennethsumang.com" target="_blank" aria-label="Email">
           <IconMail height={24} width={24} color="black" />
         </Anchor>
         <Anchor href="https://www.linkedin.com/in/kenneth-sumang/" target="_blank">
@@ -49,7 +49,7 @@ const HomeSection: React.FC = function () {
           <Image src="/logos/github.svg" alt="Github logo" height={24} width={24} />
         </Anchor>
       </Group>
-      <Button w="8em" onClick={handleResumeClick}>Resume</Button>
+      <Button w="8em" onClick={handleResumeClick} className={classes.resumeButton}>Resume</Button>
     </Stack>
   )
 }

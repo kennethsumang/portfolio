@@ -10,4 +10,5 @@ export const theme = createTheme({
     lg: '75em', // 1200px
     xl: '88em', // 1408px
   },
+  primaryShade: 8,
 });
