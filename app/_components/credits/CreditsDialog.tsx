@@ -143,10 +143,8 @@ const CreditsDialog: React.FC = function () {
     },
     {
       name: 'NodeJS',
-      license: 'CC0 1.0 Universal',
-      licenseUrl: 'https://raw.githubusercontent.com/gilbarbara/logos/master/LICENSE.txt',
-      source: 'Gil Barbara',
-      sourceUrl: 'https://github.com/gilbarbara/logos'
+      source: 'NodeJS',
+      sourceUrl: 'https://nodejs.org/en/about/branding'
     },
     {
       name: 'PHP',
