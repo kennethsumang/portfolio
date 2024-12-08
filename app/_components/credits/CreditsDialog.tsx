@@ -6,8 +6,8 @@ import React from "react";
 
 interface LogoAttribution {
   name: string;
-  license: string;
-  licenseUrl: string;
+  license?: string;
+  licenseUrl?: string;
   source: string;
   sourceUrl: string;
 }
@@ -32,17 +32,13 @@ const CreditsDialog: React.FC = function () {
     },
     {
       name: 'Bootstrap',
-      license: 'CC0 1.0 Universal',
-      licenseUrl: 'https://raw.githubusercontent.com/gilbarbara/logos/master/LICENSE.txt',
-      source: 'Gil Barbara',
-      sourceUrl: 'https://github.com/gilbarbara/logos'
+      source: 'Bootstrap',
+      sourceUrl: 'https://getbootstrap.com/docs/4.0/about/brand'
     },
     {
       name: 'ChatGPT',
-      license: 'CC BY-SA 4.0',
-      licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
-      source: 'Arcticons',
-      sourceUrl: 'https://github.com/Arcticons-Team/Arcticons'
+      source: 'OpenAI',
+      sourceUrl: 'https://openai.com/brand/'
     },
     {
       name: 'Confluence',
@@ -88,10 +84,8 @@ const CreditsDialog: React.FC = function () {
     },
     {
       name: 'Github',
-      license: 'Apache 2.0',
-      licenseUrl: 'https://github.com/Templarian/MaterialDesign/blob/master/LICENSE',
-      source: 'Pictogrammers',
-      sourceUrl: 'https://github.com/Templarian/MaterialDesign'
+      source: 'Github',
+      sourceUrl: 'https://github.com/logos'
     },
     {
       name: 'JavaScript',
@@ -130,10 +124,8 @@ const CreditsDialog: React.FC = function () {
     },
     {
       name: 'LinkedIn',
-      license: 'Apache 2.0',
-      licenseUrl: 'https://github.com/Templarian/MaterialDesign/blob/master/LICENSE',
-      source: 'Pictogrammers',
-      sourceUrl: 'https://github.com/Templarian/MaterialDesign'
+      source: 'LinkedIN',
+      sourceUrl: 'https://brand.linkedin.com/downloads'
     },
     {
       name: 'MySQL',
@@ -228,6 +220,15 @@ const CreditsDialog: React.FC = function () {
         centered
       >
         <Stack pr="xs">
+          <Text fw={700}>Frameworks and Libraries</Text>
+          <List>
+            <List.Item key="mantine">
+              Framework by <Anchor href="https://nextjs.org/" target="_blank">Next.js</Anchor> licensed under <Anchor href="https://github.com/vercel/next.js/blob/main/license.md" target="_blank">MIT License</Anchor>.
+            </List.Item>
+            <List.Item key="mantine">
+              UI Library by <Anchor href="https://mantine.dev/" target="_blank">Mantine</Anchor> licensed under <Anchor href="https://github.com/mantinedev/mantine/blob/master/LICENSE" target="_blank">MIT License</Anchor>.
+            </List.Item>
+          </List>
           <Text fw={700}>Logo Attributions</Text>
           <List>
             {
@@ -247,6 +248,12 @@ const CreditsDialog: React.FC = function () {
 }
 
 const LogoAttributionComponent: React.FC<LogoAttribution> = function (props) {
+  if (!props.license || !props.licenseUrl) {
+    return <Text>
+      {props.name} icon by <Anchor href={props.sourceUrl} target="_blank">{props.source}</Anchor>.
+    </Text>
+  }
+
   return (
     <Text>
       {props.name} icon by <Anchor href={props.sourceUrl} target="_blank">{props.source}</Anchor> licensed under <Anchor href={props.licenseUrl} target="_blank">{props.license || 'a custom license'}</Anchor>.
