@@ -24,6 +24,13 @@ const CreditsDialog: React.FC = function () {
       sourceUrl: 'https://github.com/google/material-design-icons'
     },
     {
+      name: 'School',
+      license: 'Apache 2.0',
+      licenseUrl: 'https://github.com/google/material-design-icons/blob/master/LICENSE',
+      source: 'Google',
+      sourceUrl: 'https://github.com/google/material-design-icons'
+    },
+    {
       name: 'Accenture',
       license: 'Creative Commons Zero v1.0 Universal',
       licenseUrl: 'https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md',
