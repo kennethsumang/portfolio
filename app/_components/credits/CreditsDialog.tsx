@@ -175,6 +175,13 @@ const CreditsDialog: React.FC = function () {
       sourceUrl: 'https://github.com/gilbarbara/logos'
     },
     {
+      name: 'SonarQube',
+      license: 'Creative Commons Zero v1.0 Universal',
+      licenseUrl: 'https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md',
+      source: 'Simple Icons Collaborators',
+      sourceUrl: 'https://github.com/simple-icons/simple-icons'
+    },
+    {
       name: 'UI5',
       license: '',
       licenseUrl: 'https://openui5.org/guidelines/',

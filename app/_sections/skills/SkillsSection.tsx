@@ -112,6 +112,11 @@ const SkillsSection: React.FC = function () {
       description: 'test',
     },
     {
+      logo: '/logos/sonarqube.svg',
+      name: 'SonarQube',
+      description: 'test',
+    },
+    {
       logo: '/logos/openai.svg',
       name: 'ChatGPT',
       description: 'test',
