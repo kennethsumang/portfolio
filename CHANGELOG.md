@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.8] - 2024-12-12
+### Changed
+- Changed some icons and source to their official branding.
+- Fixed typo in Credits
+- Add some meta tags for SEO
+- Added adaptive favicon
+
 ## [1.0.7] - 2024-12-08
 ### Changed
 - Changed some icons and source to their official branding.

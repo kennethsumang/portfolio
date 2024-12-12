@@ -10,6 +10,8 @@ interface Certificate {
   issuedAt: string;
   url: string;
   logo: string;
+  imageHeight?: number;
+  imageWidth?: number;
 }
 
 const CertificatesSection: React.FC = function () {
@@ -61,14 +63,16 @@ const CertificatesSection: React.FC = function () {
       url: 'https://www.udemy.com/certificate/UC-7b5988a1-42fb-470e-8e7c-f3812b39962a/',
       issuer: 'Udemy',
       issuedAt: 'May 2023',
-      logo: '/logos/udemy.svg'
+      logo: '/logos/udemy.svg',
+      imageHeight: 37,
     },
     {
       name: 'Clean Code',
       url: 'https://www.udemy.com/certificate/UC-1fc816ce-cd58-4170-8378-86f5be9986af/',
       issuer: 'Udemy',
       issuedAt: 'May 2023',
-      logo: '/logos/udemy.svg'
+      logo: '/logos/udemy.svg',
+      imageHeight: 37,
     },
     {
       name: 'Neural Networks and Deep Learning',

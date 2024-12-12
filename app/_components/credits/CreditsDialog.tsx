@@ -131,7 +131,7 @@ const CreditsDialog: React.FC = function () {
     },
     {
       name: 'LinkedIn',
-      source: 'LinkedIN',
+      source: 'LinkedIn',
       sourceUrl: 'https://brand.linkedin.com/downloads'
     },
     {
@@ -204,10 +204,8 @@ const CreditsDialog: React.FC = function () {
     },
     {
       name: 'Udemy',
-      license: 'CC0 1.0 Universal',
-      licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/',
-      source: 'CoreUI',
-      sourceUrl: 'https://github.com/coreui/coreui-icons'
+      source: 'Udemy',
+      sourceUrl: 'https://support.udemy.com/hc/en-us/articles/8926753692567-Trademark-Usage-Guidelines'
     },
     {
       name: 'Vue',
