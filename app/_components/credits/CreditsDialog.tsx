@@ -131,7 +131,7 @@ const CreditsDialog: React.FC = function () {
     },
     {
       name: 'LinkedIn',
-      source: 'LinkedIN',
+      source: 'LinkedIn',
       sourceUrl: 'https://brand.linkedin.com/downloads'
     },
     {
