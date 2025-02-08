@@ -131,3 +131,9 @@ dist
 
 .DS_Store
 .idea
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
