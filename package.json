@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@axe-core/playwright": "^4.10.1",
     "@mantine/core": "7.12.1",
     "@mantine/hooks": "7.12.1",
     "@tabler/icons-react": "^3.14.0",

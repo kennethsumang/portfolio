@@ -41,7 +41,7 @@ const AppLayout: React.FC<Props> = function ({ children }) {
     >
       <AppShell.Header className={classes.header}>
         <Group h="100%" px="md">
-          <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
+          <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" title="Toggle Menu" />
           <Group justify="space-between" className={classes.navbargroup}>
             <Text size="lg">Portfolio</Text>
             <Group ml="xl" gap={20} visibleFrom="sm">
