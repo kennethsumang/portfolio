@@ -14,7 +14,7 @@ const HomeSection: React.FC = function () {
     const typed = new Typed(typingElement.current, {
       strings: [
         'I am an experienced web developer.',
-        'I am an passionate learner.',
+        'I am a passionate learner.',
         'I am a technology architect.',
         'I am a tech enthusiast.'
       ],
