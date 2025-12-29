@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.11] - 2025-12-29
+### Changed
+- Update packages with vulnerabilities.
+
 ## [1.0.10] - 2025-12-26
 ### Changed
 - Updated resume file.
