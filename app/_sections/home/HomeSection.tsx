@@ -29,7 +29,7 @@ const HomeSection: React.FC = function () {
   }, []);
 
   function handleResumeClick() {
-    window.open('/download/resume.pdf', '_blank')
+    window.open('https://resume.kennethsumang.com', '_blank')
   }
 
   return (
