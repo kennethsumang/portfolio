@@ -1,6 +1,7 @@
 import "@mantine/core/styles.css";
 import React from "react";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
+import { Analytics } from "@vercel/analytics/next"
 import { theme } from "../theme";
 import AppLayout from "./_layout/AppLayout";
 
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: { children: any }) {
         ></meta>
       </head>
       <body style={{ scrollBehavior: "smooth" }}>
+        <Analytics />
         <MantineProvider theme={theme}>
           <AppLayout>{children}</AppLayout>
         </MantineProvider>
