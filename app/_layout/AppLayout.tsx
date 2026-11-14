@@ -34,13 +34,14 @@ const AppLayout: React.FC<Props> = function ({ children }) {
     <AppShell
       header={{ height: 60 }}
       navbar={{ width: 300, breakpoint: 'sm', collapsed: { desktop: true, mobile: !opened } }}
-      footer={{ height: 85 }}
+      footer={{ height: { base: 64, sm: 40 } }}
       padding="md"
       offsetScrollbars
       style={{ height: "100vh", display: "flex" }}
     >
       <AppShell.Header className={classes.header}>
-        <Group h="100%" px="md">
+        {/* Keep in sync with AppShell.Main px + page.tsx px so the header lines up with the content */}
+        <Group h="100%" px={{ base: 32, sm: 56, md: 64, xl: 80 }}>
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" title="Toggle Menu" />
           <Group justify="space-between" className={classes.navbargroup}>
             <Text size="lg">Portfolio</Text>
@@ -116,14 +117,14 @@ const AppLayout: React.FC<Props> = function ({ children }) {
 
       <AppShell.Footer>
         <div className={classes.footer}>
-          <Stack align="center" gap={0}>
-            <Text size="sm">
+          <Group justify="center" gap={0} style={{ columnGap: 8 }} h="100%">
+            <Text size="xs">
               All trademarks, logos and brand names are the property of their respective owners.
             </Text>
-            <div>
+            <Text size="xs" component="div">
               <CreditsDialog />
-            </div>
-          </Stack>
+            </Text>
+          </Group>
         </div>
       </AppShell.Footer>
     </AppShell>

@@ -4,9 +4,10 @@ import classes from "./SkillContainer.module.css";
 import React from "react";
 
 interface Props {
-  logo: string;
+  logo?: string;
   name: string;
   description: string;
+  component?: React.ReactNode;
 }
 
 const SkillContainer: React.FC<Props> = function (props) {
@@ -16,7 +17,7 @@ const SkillContainer: React.FC<Props> = function (props) {
         <Paper shadow="sm" p="lg" className={classes.card}>
           <Stack justify="center">
             <Group justify="center">
-              <Image src={props.logo} alt={`${props.name} logo.`} height={24} width={24} />
+              {props.component ?? (props.logo && <Image src={props.logo} alt={`${props.name} logo.`} height={24} width={24} />)}
             </Group>
             <Group justify="center">
               <Text size="md">{props.name}</Text>

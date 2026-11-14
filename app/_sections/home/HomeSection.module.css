@@ -7,3 +7,8 @@
   background-color: #1c76c4 !important;
   color: white !important;
 }
+
+.chip {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}

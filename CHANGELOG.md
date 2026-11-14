@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2026-11-14
+### Changed
+- Added CCAO-F certification badge.
+- Added Technology Architect Associate certification badge.
+- Used Tabler icons if possible.
+- Removed typed.js
+- Removed optional attributions and stale entries.
+- Added certifications.
+
 ## [1.0.11] - 2025-12-29
 ### Changed
 - Update packages with vulnerabilities.

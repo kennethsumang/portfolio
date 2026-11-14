@@ -10,6 +10,20 @@ export interface Certificate {
 
 export const certificateList: Certificate[] = [
   {
+    name: 'Claude 101',
+    url: 'https://verify.skilljar.com/c/ekk3rpvfv4pw',
+    issuer: 'Anthropic',
+    issuedAt: 'November 2026',
+    logo: '/logos/anthropic.svg'
+  },
+  {
+    name: 'AI Capabilities and Limitations',
+    url: 'https://verify.skilljar.com/c/ebivea6tzcg2',
+    issuer: 'Anthropic',
+    issuedAt: 'November 2026',
+    logo: '/logos/anthropic.svg'
+  },
+  {
     name: 'Technology Architect Associate Certificate',
     url: 'https://www.credly.com/badges/95627021-1eea-47be-9720-bd400a10d291/linked_in_profile',
     issuer: 'Accenture Inc.',

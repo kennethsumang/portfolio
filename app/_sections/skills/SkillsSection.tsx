@@ -2,135 +2,127 @@
 
 import { Grid, Stack, Title } from "@mantine/core";
 import SkillContainer from "../../_components/skills/SkillContainer";
+import { IconBrandBootstrap, IconBrandDocker, IconBrandGit, IconBrandJavascript, IconBrandJira, IconBrandLaravel, IconBrandMysql, IconBrandNextjs, IconBrandNodejs, IconBrandPhp, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconBrandVue } from "@tabler/icons-react";
 import React from "react";
 
 interface Skill {
-  logo: string;
+  logo?: string;
   name: string;
   description: string;
+  component?: React.ReactNode;
 }
 
 const SkillsSection: React.FC = function () {
   const frontendSkillList: Skill[] = [
     {
-      logo: '/logos/javascript.svg',
       name: 'JavaScript',
       description: 'test',
+      component: <IconBrandJavascript height={24} width={24} aria-label="JavaScript" />
     },
     {
-      logo: '/logos/typescript.svg',
       name: 'TypeScript',
       description: 'test',
+      component: <IconBrandTypescript height={24} width={24} aria-label="TypeScript" />
     },
     {
-      logo: '/logos/react.svg',
       name: 'React',
       description: 'test',
+      component: <IconBrandReact height={24} width={24} aria-label="React" />
     },
     {
-      logo: '/logos/nextjs.svg',
       name: 'NextJS',
       description: 'test',
+      component: <IconBrandNextjs height={24} width={24} aria-label="NextJS" />
     },
     {
-      logo: '/logos/vue.svg',
       name: 'Vue',
       description: 'test',
+      component: <IconBrandVue height={24} width={24} aria-label="Vue" />
     },
     {
       logo: '/logos/sapui5.svg',
       name: 'SAPUI5',
-      description: 'test',
+      description: 'test'
     },
     {
       logo: '/logos/jquery.svg',
       name: 'jQuery',
-      description: 'test',
+      description: 'test'
     },
     {
-      logo: '/logos/tailwind.svg',
       name: 'Tailwind',
       description: 'test',
+      component: <IconBrandTailwind height={24} width={24} aria-label="Tailwind" />
     },
     {
-      logo: '/logos/bootstrap.svg',
       name: 'Bootstrap',
       description: 'test',
+      component: <IconBrandBootstrap height={24} width={24} aria-label="Bootstrap" />
     },
     {
       logo: '/logos/jest.svg',
       name: 'Jest',
-      description: 'test',
+      description: 'test'
     },
   ];
 
   const backendSkillList: Skill[] = [
     {
-      logo: '/logos/laravel.svg',
       name: 'Laravel',
       description: 'test',
+      component: <IconBrandLaravel height={24} width={24} aria-label="Laravel" />
     },
     {
-      logo: '/logos/php.svg',
       name: 'PHP',
       description: 'test',
+      component: <IconBrandPhp height={24} width={24} aria-label="PHP" />
     },
     {
       logo: '/logos/express.svg',
       name: 'Express',
-      description: 'test',
+      description: 'test'
     },
     {
-      logo: '/logos/nodejs.svg',
       name: 'NodeJS',
       description: 'test',
+      component: <IconBrandNodejs height={24} width={24} aria-label="NodeJS" />
     }
   ];
 
   const databaseSkillList: Skill[] = [
     {
-      logo: '/logos/mysql.svg',
       name: 'MySQL',
       description: 'test',
+      component: <IconBrandMysql height={24} width={24} aria-label="MySQL" />
     },
     {
       logo: '/logos/postgresql.svg',
       name: 'PostgreSQL',
-      description: 'test',
+      description: 'test'
     },
   ]
 
   const toolsSkillList: Skill[] = [
     {
-      logo: '/logos/git.svg',
       name: 'Git',
       description: 'test',
+      component: <IconBrandGit height={24} width={24} aria-label="Git" />
     },
     {
-      logo: '/logos/docker.svg',
       name: 'Docker',
       description: 'test',
+      component: <IconBrandDocker height={24} width={24} aria-label="Docker" />
     },
     {
       logo: '/logos/sonarqube.svg',
       name: 'SonarQube',
-      description: 'test',
+      description: 'test'
     },
     {
-      logo: '/logos/openai.svg',
-      name: 'ChatGPT',
-      description: 'test',
-    },
-    {
-      logo: '/logos/jira.svg',
       name: 'Jira',
       description: 'test',
-    },
-    {
-      logo: '/logos/confluence.svg',
-      name: 'Confluence',
-      description: 'test',
-    },
+      component: <IconBrandJira height={24} width={24} aria-label="Jira" />
+    }
   ];
 
   return (
