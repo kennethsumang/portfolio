@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Fixed CCAO-F link.
 - Remove Technology Architect Associate in certifications.
+- Update resume.
 
 ## [1.1.0] - 2026-11-14
 ### Changed
