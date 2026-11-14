@@ -1,7 +1,7 @@
 "use client"
 
 import { Stack, Timeline, Title, Text, List } from "@mantine/core";
-import { IconBriefcaseFilled } from '@tabler/icons-react';
+import { IconBriefcaseFilled, IconSchool } from '@tabler/icons-react';
 import React from "react";
 import Image from "next/image";
 
@@ -43,7 +43,7 @@ const HistorySection: React.FC = function () {
           <Text size="xs" mt={4}>2017</Text>
         </Timeline.Item>
 
-        <Timeline.Item bullet={<Image src="/logos/school.svg" alt="school icon" height={14} width={14} color="black" />} title="Polytechnic University of the Philippines">
+        <Timeline.Item bullet={<IconSchool size={12} />} title="Polytechnic University of the Philippines">
           <Text>Bachelor of Science in Computer Science</Text>
           <Text size="xs" mt={4}>2014 - 2018</Text>
         </Timeline.Item>
