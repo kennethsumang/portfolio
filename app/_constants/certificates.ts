@@ -24,13 +24,6 @@ export const certificateList: Certificate[] = [
     logo: '/logos/anthropic.svg'
   },
   {
-    name: 'Technology Architect Associate Certificate',
-    url: 'https://www.credly.com/badges/95627021-1eea-47be-9720-bd400a10d291/linked_in_profile',
-    issuer: 'Accenture Inc.',
-    issuedAt: 'August 2024',
-    logo: '/logos/accenture.svg'
-  },
-  {
     name: 'Cloud Security Fundamentals: Cloud Application Security',
     url: 'https://skillsoft.digitalbadges.skillsoft.com/db8d5e59-1fea-4844-be88-ec4adddf971c',
     issuer: 'Skillsoft via Accenture Inc.',

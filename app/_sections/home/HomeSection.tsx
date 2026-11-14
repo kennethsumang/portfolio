@@ -12,7 +12,7 @@ const HomeSection: React.FC = function () {
     e.preventDefault();
     switch (certification) {
       case 'Claude Certified Associate - Foundations':
-        window.open('https://verify.skilljar.com/c/ekk3rpvfv4pw', '_blank');
+        window.open('https://www.credly.com/badges/4ff4760e-e9d0-4860-8072-e8e162f8f05c/linked_in_profile', '_blank');
         break;
       case 'Technology Architect Associate':
         window.open('https://www.credly.com/badges/95627021-1eea-47be-9720-bd400a10d291/linked_in_profile', '_blank');
