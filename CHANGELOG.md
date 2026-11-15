@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [1.1.2] - 2026-11-15
 ### Changed
 - Improve SEO.
+- Convert some logos to outlined black-and-white.
 
 ## [1.1.1] - 2026-11-14
 ### Changed
