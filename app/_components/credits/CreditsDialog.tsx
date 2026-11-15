@@ -34,7 +34,7 @@ const CreditsDialog: React.FC = function () {
   
   return (
     <>
-      <Anchor onClick={toggle}>Credits</Anchor>
+      <Anchor component="button" type="button" onClick={toggle}>Credits</Anchor>
 
       <Modal
         opened={opened}
