@@ -9,7 +9,6 @@ Personal portfolio site for Kenneth Sumang, a Senior Software Engineer. It's a s
 - [Tabler Icons](https://tabler.io/icons) for icons
 - [TypeScript](https://www.typescriptlang.org/)
 - [Playwright](https://playwright.dev/) for end-to-end tests, with [axe-core](https://github.com/dequelabs/axe-core-npm) for accessibility checks
-- [Wrangler](https://developers.cloudflare.com/workers/wrangler/) for Cloudflare deployment
 
 ## Getting Started
 

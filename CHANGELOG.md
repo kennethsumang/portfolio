@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - Add custom 404 page.
 - Update resume.
 - Update packages for security.
+- Remove unused packages.
 
 ## [1.1.1] - 2026-11-14
 ### Changed
