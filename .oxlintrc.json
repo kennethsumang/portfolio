@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": [
+    "nextjs",
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "categories": {
+    "correctness": "error"
+  },
+  "ignorePatterns": [
+    ".next",
+    "node_modules",
+    "**/*.js",
+    "**/*.mjs",
+    "**/*.cjs"
+  ],
+  "rules": {
+    "no-unused-vars": "warn"
+  }
+}

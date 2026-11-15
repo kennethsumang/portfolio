@@ -7,6 +7,8 @@ All notable changes to this project will be documented in this file.
 - Improve SEO.
 - Convert some logos to outlined black-and-white.
 - Add custom 404 page.
+- Update resume.
+- Update packages for security.
 
 ## [1.1.1] - 2026-11-14
 ### Changed
