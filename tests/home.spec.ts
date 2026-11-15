@@ -15,11 +15,11 @@ test.describe('home tests', () => {
     await expect(page.getByText('Technology Architect Associate', { exact: true })).toBeVisible();
   });
 
-  test('Claude chip opens the certificate verification page', async ({ page }) => {
+  test('Claude chip opens the Credly badge', async ({ page }) => {
     const popupPromise = page.waitForEvent('popup');
     await page.getByText('Claude Certified Associate - Foundations').click();
     const popup = await popupPromise;
-    expect(popup.url().split('#')[0]).toContain('verify.skilljar.com/c/ekk3rpvfv4pw');
+    expect(popup.url().split('#')[0]).toContain('credly.com/badges/4ff4760e-e9d0-4860-8072-e8e162f8f05c');
   });
 
   test('Technology Architect chip opens the Credly badge', async ({ page }) => {
