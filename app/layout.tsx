@@ -4,7 +4,6 @@ import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { theme } from "../theme";
-import AppLayout from "./_layout/AppLayout";
 
 export const metadata = {
   title: "Kenneth Sumang | Web Developer",
@@ -51,7 +50,7 @@ export default function RootLayout({ children }: { children: any }) {
         <Analytics />
         <SpeedInsights />
         <MantineProvider theme={theme}>
-          <AppLayout>{children}</AppLayout>
+          {children}
         </MantineProvider>
       </body>
     </html>

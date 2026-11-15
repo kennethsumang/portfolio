@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Improve SEO.
 - Convert some logos to outlined black-and-white.
+- Add custom 404 page.
 
 ## [1.1.1] - 2026-11-14
 ### Changed
